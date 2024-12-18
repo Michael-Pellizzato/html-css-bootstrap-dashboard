@@ -10,10 +10,10 @@
     
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
         <div class="container-fluid bg-black">
             <img width="4%" src="./img/duck.png" alt="">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>                   
@@ -42,94 +42,141 @@
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <input class="form-control me-2 bg-white" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success border-white text-white" type="submit">Search</button>
             </form>
           </div>
         </div>
     </nav>
 
-    <div>
-
-    </div>
-
-    <div class="container-lg">
-        <table class="table table-striped">
-            <thead>
-                <th>titolo</th>
-                <th class="d-none d-sm-block">data prestito</th>
-                <th>stato</th>
-                <th>azioni</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>i pilastri della terra</td>
-                    <td class="d-none d-sm-block">-</td>
-                    <td class="">disponibile</td>                    
-                    <td><i class="fa-solid fa-pencil border border-black rounded-1"></i> <i class="fa-solid fa-trash border border-black rounded-1"></i></td>                    
-                </tr>
-                <tr>
-                    <td>i pilastri della terra</td>
-                    <td class="d-none d-sm-block">-</td>
-                    <td>disponibile</td>                    
-                    <td><i class="fa-solid fa-pencil border border-black rounded-1"></i> <i class="fa-solid fa-trash border border-black rounded-1"></i></td>                    
-                </tr>
-                <tr>
-                    <td>i pilastri della terra</td>
-                    <td class="d-none d-sm-block">-</td>
-                    <td>disponibile</td>                    
-                    <td><i class="fa-solid fa-pencil border border-black rounded-1"></i> <i class="fa-solid fa-trash border border-black rounded-1"></i></td>                    
-                </tr>
-                <tr>
-                    <td>i pilastri della terra</td>
-                    <td class="d-none d-sm-block">-</td>
-                    <td>disponibile</td>                    
-                    <td><i class="fa-solid fa-pencil border border-black rounded-1"></i> <i class="fa-solid fa-trash border border-black rounded-1"></i></td>                    
-                </tr>
-                <tr>
-                    <td>i pilastri della terra</td>
-                    <td class="d-none d-sm-block">-</td>
-                    <td>disponibile</td>                    
-                    <td><i class="fa-solid fa-pencil border border-black rounded-1"></i> <i class="fa-solid fa-trash border border-black rounded-1"></i></td>                    
-                </tr>
-                <tr>
-                    <td>i pilastri della terra</td>
-                    <td class="d-none d-sm-block">-</td>
-                    <td>disponibile</td>                    
-                    <td><i class="fa-solid fa-pencil border border-black rounded-1"></i> <i class="fa-solid fa-trash border border-black rounded-1"></i></td>                    
-                </tr>
-                <tr>
-                    <td>i pilastri della terra</td>
-                    <td class="d-none d-sm-block">-</td>
-                    <td>disponibile</td>                    
-                    <td><i class="fa-solid fa-pencil border border-black rounded-1"></i> <i class="fa-solid fa-trash border border-black rounded-1"></i></td>                    
-                </tr>
-                <tr>
-                    <td>i pilastri della terra</td>
-                    <td class="d-none d-sm-block">-</td>
-                    <td >disponibile</td>                    
-                    <td><i class="fa-solid fa-pencil border border-black rounded-1"></i> <i class="fa-solid fa-trash border border-black rounded-1"></i></td>                    
-                </tr>
-                <tr>
-                    <td>i pilastri della terra</td>
-                    <td class="d-none d-sm-block">-</td>
-                    <td>disponibile</td>                    
-                    <td><i class="fa-solid fa-pencil border border-black rounded-1"></i> <i class="fa-solid fa-trash border border-black rounded-1"></i></td>                    
-                </tr>
-                <tr>
-                    <td>i pilastri della terra</td>
-                    <td class="d-none d-sm-block">-</td>
-                    <td>disponibile</td>                    
-                    <td><i class="fa-solid fa-pencil border border-black rounded-1"></i> <i class="fa-solid fa-trash border border-black rounded-1"></i></td>                    
-                </tr>
-                <tr>
-                    <td>i pilastri della terra</td>
-                    <td class="d-none d-sm-block">-</td>
-                    <td>disponibile</td>                    
-                    <td><i class="fa-solid fa-pencil border border-black rounded-1"></i> <i class="fa-solid fa-trash border border-black rounded-1"></i></td>                    
-                </tr>
-            </tbody>            
-        </table>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-lg-4">
+                <h4>Catalogo libri</h4>
+            </div>
+            <div class="col-6 col-lg-4 text-end">
+                <button class="btn btn-primary">aggiungi libro</button>
+            </div>            
+        </div>       
+   
+        <div class="col-lg-8">
+            <table class="table table-striped">
+                <thead>
+                    <th>titolo</th>
+                    <th class="d-none d-sm-table-cell">data prestito</th>
+                    <th>stato</th>
+                    <th>azioni</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>i pilastri della terra</td>
+                        <td class="d-none d-sm-table-cell">-</td>
+                        <td class="">disponibile</td>                    
+                        <td><i class="fa-solid fa-pencil border border-black rounded-1"></i> <i class="fa-solid fa-trash border border-black rounded-1"></i></td>                    
+                    </tr>
+                    <tr>
+                        <td>i pilastri della terra</td>
+                        <td class="d-none d-sm-table-cell">-</td>
+                        <td>disponibile</td>                    
+                        <td><i class="fa-solid fa-pencil border border-black rounded-1"></i> <i class="fa-solid fa-trash border border-black rounded-1"></i></td>                    
+                    </tr>
+                    <tr>
+                        <td>i pilastri della terra</td>
+                        <td class="d-none d-sm-table-cell">-</td>
+                        <td>disponibile</td>                    
+                        <td><i class="fa-solid fa-pencil border border-black rounded-1"></i> <i class="fa-solid fa-trash border border-black rounded-1"></i></td>                    
+                    </tr>
+                    <tr>
+                        <td>i pilastri della terra</td>
+                        <td class="d-none d-sm-table-cell">-</td>
+                        <td>disponibile</td>                    
+                        <td><i class="fa-solid fa-pencil border border-black rounded-1"></i> <i class="fa-solid fa-trash border border-black rounded-1"></i></td>                    
+                    </tr>
+                    <tr>
+                        <td>i pilastri della terra</td>
+                        <td class="d-none d-sm-table-cell">-</td>
+                        <td>disponibile</td>                    
+                        <td><i class="fa-solid fa-pencil border border-black rounded-1"></i> <i class="fa-solid fa-trash border border-black rounded-1"></i></td>                    
+                    </tr>
+                    <tr>
+                        <td>i pilastri della terra</td>
+                        <td class="d-none d-sm-table-cell">-</td>
+                        <td>disponibile</td>                    
+                        <td><i class="fa-solid fa-pencil border border-black rounded-1"></i> <i class="fa-solid fa-trash border border-black rounded-1"></i></td>                    
+                    </tr>
+                    <tr>
+                        <td>i pilastri della terra</td>
+                        <td class="d-none d-sm-table-cell">-</td>
+                        <td>disponibile</td>                    
+                        <td><i class="fa-solid fa-pencil border border-black rounded-1"></i> <i class="fa-solid fa-trash border border-black rounded-1"></i></td>                    
+                    </tr>
+                    <tr>
+                        <td>i pilastri della terra</td>
+                        <td class="d-none d-sm-table-cell">-</td>
+                        <td >disponibile</td>                    
+                        <td><i class="fa-solid fa-pencil border border-black rounded-1"></i> <i class="fa-solid fa-trash border border-black rounded-1"></i></td>                    
+                    </tr>
+                    <tr>
+                        <td>Le cronache di narnia: il leone, la strega e l'armadio</td>
+                        <td class="d-none d-sm-table-cell">-</td>
+                        <td>disponibile</td>                    
+                        <td><i class="fa-solid fa-pencil border border-black rounded-1"></i> <i class="fa-solid fa-trash border border-black rounded-1"></i></td>                    
+                    </tr>
+                    <tr>
+                        <td>i pilastri della terra</td>
+                        <td class="d-none d-sm-table-cell">-</td>
+                        <td>disponibile</td>                    
+                        <td><i class="fa-solid fa-pencil border border-black rounded-1"></i> <i class="fa-solid fa-trash border border-black rounded-1"></i></td>                    
+                    </tr>
+                    <tr>
+                        <td>i pilastri della terra</td>
+                        <td class="d-none d-sm-table-cell">-</td>
+                        <td>disponibile</td>                    
+                        <td><i class="fa-solid fa-pencil border border-black rounded-1"></i> <i class="fa-solid fa-trash border border-black rounded-1"></i></td>                    
+                    </tr>
+                </tbody>            
+            </table>
+        </div>
+        <div class="col-lg-4">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      F.A.Q.
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio alias odit vitae, sunt in, aliquam quasi incidunt obcaecati officiis tempora cumque iste facere assumenda consequuntur quod amet soluta optio suscipit!
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
     </div>
 
         
